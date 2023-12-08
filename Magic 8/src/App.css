@@ -1,0 +1,89 @@
+
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ball{
+display:flex;
+align-items: center;
+justify-content: center;
+background: radial-gradient(circle at 10rem 10rem,#413D3D, #000);
+height:50rem;
+width: 50rem;
+border-radius: 50%;
+
+}
+
+.fortune {
+  background-color: white;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fortune-inner {
+  font-size: 23rem; 
+}
+
+.fortune--display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: black;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  top: 48.2%;
+  border-style: solid ;
+  border-width:  thick;
+  border-color: #28282B;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: display 0.5s; 
+}
+
+.triangle-container {
+  width: 0;
+  height: 0;
+  margin-top: 35px;
+  border-left: 115px solid transparent;
+  border-right: 115px solid transparent;
+  border-top: 170px solid blue;
+
+}
+
+.answer {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.question{
+width: 500px;
+margin-top:25px;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+  
+}
+
